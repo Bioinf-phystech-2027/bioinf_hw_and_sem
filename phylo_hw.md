@@ -14,5 +14,6 @@ sed -E 's/^>([A-Za-z0-9_.]+).+\[organism=([^]]+)\].*/>\2_\1/; s/ /_/g' ortholog_
 head -5 ortholog_data/ncbi_dataset/data/protein_renamed.faa
 
 >Pongo_abelii_XP_002821373.3
+
 MGNRSTADEDWLLAGLGPDAGAAAGASAGLAGQGAAALVGGVLLIGAVLAGNSLVCVSVATERALQTPTN
 SFIVSLAAADLLLALLVLPLFVYSEVQGGAWLLSPRLCDALMAMDVMLCTASIFNLCAISVDRFVAVAVP
