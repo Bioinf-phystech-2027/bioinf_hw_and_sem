@@ -35,7 +35,9 @@ https://www.ebi.ac.uk/jdispatcher/msa/clustalo/summary?jobId=clustalo-I20260420-
 
 (CLUSTAL)
 
-Проигнорируем манящую вкладку с деревом (
+Проигнорируем манящую вкладку с уже готовым деревом 
+
+(
 Phylogenetic Tree
 (
 (
