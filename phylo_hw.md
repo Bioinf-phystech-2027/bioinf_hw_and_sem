@@ -1,7 +1,7 @@
-Задание 1. Подготовка данных.
+# Задание 1. Подготовка данных.
 Для данного задания я выбрала ген, о котором услышала в подкасте правого полушария интроверта - DRD4 (фото-подтверждение прикрепляю):
 
-Проверка какой формат изначально:
+### Проверка какой формат изначально:
 
 > head -5 ortholog_data/ncbi_dataset/data/protein.faa
 
@@ -12,11 +12,11 @@ SFIVSLAAADLLLALLVLPLFVYSEVQGGAWLLSPRLCDALMAMDVMLCTASIFNLCAISVDRFVAVAVP
 LRYNRQGGSRRQLLLIGATWLLSAAVAAPILCGLNDVRGRDPAVCRLEDRDYVVYSSVCSFFLPCPLMLL
 LYWATFRGLQRWEVARRAKLHGRAPRRPSGPGPPSPTPPAPRLPQDPCGPDCAPPAPRLPQGPCSPNCAS
 
-Команда для переименования:
+### Команда для переименования:
 
 > sed -E 's/^>([A-Za-z0-9_.]+).+\[organism=([^]]+)\].*/>\2_\1/; s/ /_/g' ortholog_data/ncbi_dataset/data/protein.faa > ortholog_data/ncbi_dataset/data/protein_renamed.faa
 
-Проверка после:
+### Проверка после:
 
 > head -5 ortholog_data/ncbi_dataset/data/protein_renamed.faa
 
